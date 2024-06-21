@@ -1,0 +1,25 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "lib": ["esnext", "dom"],
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "resolveJsonModule": true,
+    "types": ["@dcloudio/types", "z-paging/global.d.ts", "wot-design-uni/global.d.ts"],
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "noImplicitThis": true,
+    "noEmit": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "verbatimModuleSyntax": true,
+    "ignoreDeprecations": "5.0",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/**/*.vue", "src/api/user.js"]
+}
