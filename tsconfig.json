@@ -4,6 +4,7 @@
     "composite": true,
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
+    "rootDir": "./src",
     "module": "ESNext",
     "moduleResolution": "bundler",
     "paths": {
@@ -15,7 +16,7 @@
     "allowJs": true,
     "noImplicitThis": true,
     "noEmit": true,
-    "outDir": "dist",
+    "outDir": "distjs", // 修改为项目根目录
     "sourceMap": true,
     "verbatimModuleSyntax": true,
     "ignoreDeprecations": "5.0",

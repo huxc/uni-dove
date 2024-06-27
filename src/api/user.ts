@@ -26,7 +26,18 @@ export function getCustomers(data: any, prop = {}) {
     url: '/customer',
   })
 }
-
+/**
+ * api_user_getCustomerById
+ * 获取单个客户信息
+ */
+export function getCustomerById(id: any, prop = {}) {
+  return http.request({
+    ...prop,
+    method: 'GET',
+    domain: 'basics',
+    url: `/customer/${id}`,
+  })
+}
 /**
  * api_user_deleteCustomers
  * 删除客户

@@ -18,13 +18,13 @@
         <image
           :src="item.avatar"
           alt="joy"
-          class="border-rd-4px mr-12px h-80rpx w-80rpx"
+          class="border-rd-4 mr-12 h-80 w-80"
         />
         <view>
-          <view class="text-[rgba(0,0,0,0.85)] text-32rpx">
+          <view class="text-[rgba(0,0,0,0.85)] text-1">
             {{ item.name }}
           </view>
-          <view class="text-[rgba(0,0,0,0.25)] text-24rpx">
+          <view class="text-[rgba(0,0,0,0.25)] text-24">
             邮箱：{{ item.email }} | 年龄：{{ item.age }}
           </view>
         </view>

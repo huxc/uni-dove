@@ -28,20 +28,20 @@ import User from './components/user/index.vue'
 import store from '@/store'
 
 const tabbar = ref<string>('home')
-const isInit = ref<boolean>(false)
+const isInit = ref<boolean>(true)
 
 onMounted(() => {
-  if (store.userStore?.getToken) {
-    isInit.value = true
-  }
-  else {
-    // store.userStore.logIn({
-    //   username: 'admin',
-    //   password: '123456',
-    // }).then(() => {
-    //   isInit.value = true
-    // })
-  }
+//   if (store.userStore?.getToken) {
+//     isInit.value = true
+//   }
+//   else {
+//     store.userStore.logIn({
+//       username: 'admin',
+//       password: '123456',
+//     }).then(() => {
+//       isInit.value = true
+//     })
+//   }
 })
 </script>
 

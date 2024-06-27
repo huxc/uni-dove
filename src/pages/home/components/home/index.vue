@@ -1,15 +1,28 @@
 <template>
-  <view>首页</view>
-  <wd-button type="success">
-    成功按钮
-  </wd-button>
-  <wd-button type="info">
-    信息按钮
-  </wd-button>
+  <view>
+    <wd-button size="small" plain @click="handleAbout">
+      关于
+    </wd-button>
+  </view>
 </template>
 
 <script lang="ts" setup>
+const router = useRouter()
 
+/**
+ * handleAbout
+ */
+function handleAbout() {
+  router.navigateTo({
+    path: '/pages/about/index',
+    // 参数
+    query: {
+      id: 1,
+    },
+  })
+}
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+</style>

@@ -102,6 +102,9 @@ importers:
       '@dcloudio/vite-plugin-uni':
         specifier: 3.0.0-alpha-4020120240618002
         version: 3.0.0-alpha-4020120240618002(postcss@8.4.38)(rollup@4.18.0)(vite@5.2.8(@types/node@20.14.2)(sass@1.77.4)(terser@5.31.1))(vue@3.4.27(typescript@4.9.5))
+      '@iconify/json':
+        specifier: ^2.2.222
+        version: 2.2.222
       '@uni-helper/unocss-preset-uni':
         specifier: ^0.2.9
         version: 0.2.9(@unocss/preset-mini@0.61.0)(@unocss/rule-utils@0.61.0)(@unocss/vite@0.61.0(rollup@4.18.0)(vite@5.2.8(@types/node@20.14.2)(sass@1.77.4)(terser@5.31.1)))(unocss-applet@0.8.2(@unocss/core@0.61.0)(@unocss/preset-mini@0.61.0)(@unocss/preset-uno@0.61.0)(magic-string@0.30.10)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.2.8(@types/node@20.14.2)(sass@1.77.4)(terser@5.31.1))))(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.2.8(@types/node@20.14.2)(sass@1.77.4)(terser@5.31.1)))
@@ -139,7 +142,7 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       typescript:
-        specifier: ^4.9.4
+        specifier: ^4.9.5
         version: 4.9.5
       unocss:
         specifier: ^0.61.0
@@ -1146,6 +1149,9 @@ packages:
   '@humanwhocodes/retry@0.3.0':
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
+
+  '@iconify/json@2.2.222':
+    resolution: {integrity: sha512-7Q3wTaWCOk/npMrH1fyy37noARUBTb3B6daGr23+CiNCrTpV3byH+d5LEqPPVi+RT369IEKEcE8+s5MFN1hcOg==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -7151,6 +7157,11 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.3.0': {}
+
+  '@iconify/json@2.2.222':
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
 
   '@iconify/types@2.0.0': {}
 

@@ -7,6 +7,7 @@ export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
   const api_user_deleteCustomers: typeof import('@/api/user')['deleteCustomers']
+  const api_user_getCustomerById: typeof import('@/api/user')['getCustomerById']
   const api_user_getCustomers: typeof import('@/api/user')['getCustomers']
   const api_user_getCustomers2: typeof import('@/api/modules/user')['getCustomers2']
   const api_user_login: typeof import('@/api/user')['login']
@@ -110,6 +111,7 @@ declare module 'vue' {
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly api_user_deleteCustomers: UnwrapRef<typeof import('@/api/user')['deleteCustomers']>
+    readonly api_user_getCustomerById: UnwrapRef<typeof import('@/api/user')['getCustomerById']>
     readonly api_user_getCustomers: UnwrapRef<typeof import('@/api/user')['getCustomers']>
     readonly api_user_login: UnwrapRef<typeof import('@/api/user')['login']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
@@ -197,6 +199,7 @@ declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly api_user_deleteCustomers: UnwrapRef<typeof import('@/api/user')['deleteCustomers']>
+    readonly api_user_getCustomerById: UnwrapRef<typeof import('@/api/user')['getCustomerById']>
     readonly api_user_getCustomers: UnwrapRef<typeof import('@/api/user')['getCustomers']>
     readonly api_user_login: UnwrapRef<typeof import('@/api/user')['login']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>

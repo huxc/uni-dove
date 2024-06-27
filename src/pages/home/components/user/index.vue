@@ -1,9 +1,9 @@
 <template>
-  <view>我的</view>
+  <view>客户</view>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 
 </script>
 
-  <style scoped lang="scss"></style>
+<style scoped lang="scss"></style>
