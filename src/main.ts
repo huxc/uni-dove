@@ -1,6 +1,6 @@
 import { createSSRApp } from 'vue'
 import App from './App.vue'
-import router from './router/index.ts'
+import router from './router/index'
 import { registerStore } from './store'
 import store from '@/store/register'
 import 'virtual:uno.css'

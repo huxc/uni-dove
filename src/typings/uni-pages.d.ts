@@ -22,3 +22,9 @@ declare interface Uni {
   switchTab(options: UniNamespace.SwitchTabOptions & SwitchTabOptions): void;
   reLaunch(options: UniNamespace.ReLaunchOptions & ReLaunchOptions): void;
 }
+
+declare module 'uni-router-routes' {
+    const pages: any
+    export default pages
+  }
+  
