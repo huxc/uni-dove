@@ -1,3 +1,4 @@
+import process from 'node:process'
 import { readFileSync } from 'node:fs'
 import { basename, extname } from 'node:path'
 import ts from 'typescript'
@@ -11,11 +12,11 @@ const modules: { [key: string]: any[] } = {
  * 解析文件并提取函数名
  */
 export function getAutoImport() {
-  const files = globSync('./src/api/*.{js,ts}')
+  const files = globSync('./src/api/modules/*.{js,ts}')
 
   for (const filePath of files) {
     const fileName = basename(filePath, extname(filePath))
-    const key = `@/api/${fileName}`
+    const key = `@/api/modules/${fileName}`
     modules[key] = []
 
     const code = readFileSync(filePath, 'utf8')

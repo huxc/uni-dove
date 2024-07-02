@@ -40,7 +40,7 @@ function storeSetup() {
   /**
    * 登录
    */
-  const logIn = (loginForm: LoginForm): Promise<any> => {
+  const logIn = (loginForm: loginDto): Promise<ApiRes<UserDto>> => {
     return new Promise((resolve, reject) => {
       api_user_login(loginForm)
         .then(({ data }: any) => {

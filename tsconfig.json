@@ -4,23 +4,22 @@
     "composite": true,
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
-    "rootDir": "./src",
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Node",
     "paths": {
       "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "types": ["@dcloudio/types", "z-paging/global.d.ts", "wot-design-uni/global.d.ts"],
     "allowImportingTsExtensions": true,
-    "allowJs": true,
+    "allowJs": false,
     "noImplicitThis": true,
     "noEmit": true,
-    "outDir": "distjs", // 修改为项目根目录
+    "outDir": "dist",
     "sourceMap": true,
     "verbatimModuleSyntax": true,
     "ignoreDeprecations": "5.0",
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/**/*.vue", "src/api/user.js"]
+  "include": ["src/**/*"]
 }

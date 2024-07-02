@@ -1,9 +1,4 @@
-interface LoginForm {
-  username: string
-  password: string
-}
-
-interface User {
+interface UserDto {
   id: number
   name: string
   gender: number
@@ -16,7 +11,6 @@ interface User {
   created_at: string
   updated_at: string
 }
-
 interface Pagination<T> {
   currentPage: number
   isFirstPage: boolean
@@ -29,9 +23,9 @@ interface Pagination<T> {
 }
 
 // 接口返回对象
-interface ApiRes {
+interface ApiRes<T = any> {
   code: number
-  data: string | Record<string, any> | ArrayBuffer | Pagination<User>
+  data: T
   msg: string
   success: boolean
 }

@@ -1,15 +1,13 @@
-<route type="home">
+<route  type="home">
 {
     "style": {
         "navigationStyle":"custom",
-        "navigationBarTitleText": "首页"
     }
 }
 </route>
 
 <template>
   <view v-if="isInit" w-100vw h-100vh>
-    <wd-navbar title="标题" :fixed="true" placeholder safe-area-inset-top />
     <Home v-if="tabbar === 'home'" />
     <List v-if="tabbar === 'list'" />
     <User v-if="tabbar === 'user'" />
@@ -27,21 +25,22 @@ import List from './components/list/index.vue'
 import User from './components/user/index.vue'
 import store from '@/store'
 
-const tabbar = ref<string>('home')
+const tabbar = ref<string>('user')
 const isInit = ref<boolean>(true)
 
 onMounted(() => {
-//   if (store.userStore?.getToken) {
-//     isInit.value = true
-//   }
-//   else {
-//     store.userStore.logIn({
-//       username: 'admin',
-//       password: '123456',
-//     }).then(() => {
-//       isInit.value = true
-//     })
-//   }
+  if (store.userStore?.getToken) {
+    isInit.value = true
+  }
+  else {
+    store.userStore.logIn({
+      username: 'admin',
+      password: '123456',
+      d: effectScope,
+    }).then(() => {
+      isInit.value = true
+    })
+  }
 })
 </script>
 

@@ -6,7 +6,7 @@
   </view>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import { getStorage, setStorage } from '@/utils/cache'
 
 const userInfo = reactive({})

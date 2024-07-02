@@ -41,5 +41,5 @@
   ],
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "javascript.inlayHints.parameterTypes.enabled": true
+"javascript.inlayHints.parameterTypes.enabled": true
 }

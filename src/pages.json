@@ -17,13 +17,20 @@
       "path": "pages/home/index",
       "type": "home",
       "style": {
-        "navigationStyle": "custom",
-        "navigationBarTitleText": "首页"
+        "navigationStyle": "custom"
       }
     },
     {
       "path": "pages/about/index",
       "type": "page"
+    },
+    {
+      "path": "pages/login/index",
+      "type": "page",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
     }
   ],
   "subPackages": [

@@ -6,6 +6,7 @@
 interface NavigateToOptions {
   url: "/pages/home/index" |
        "/pages/about/index" |
+       "/pages/login/index" |
        "/pages-sub/detail/index";
 }
 interface RedirectToOptions extends NavigateToOptions {}
@@ -22,9 +23,3 @@ declare interface Uni {
   switchTab(options: UniNamespace.SwitchTabOptions & SwitchTabOptions): void;
   reLaunch(options: UniNamespace.ReLaunchOptions & ReLaunchOptions): void;
 }
-
-declare module 'uni-router-routes' {
-    const pages: any
-    export default pages
-  }
-  

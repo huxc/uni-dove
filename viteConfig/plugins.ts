@@ -41,7 +41,7 @@ export async function createVitePlugins() {
       vueTemplate: true,
     }),
     ViteRestart({
-      restart: ['vite.config.[jt]s', './src/api/**.[tj]s'],
+      restart: ['vite.config.[jt]s'],
     }),
     UnoCSS(),
     ...(isProduction ? [RemoveConsole()] : []),
