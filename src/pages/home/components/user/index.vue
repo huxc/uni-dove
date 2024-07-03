@@ -12,70 +12,98 @@
       </view>
       <image
         w-100vw h-140 pos-absolute pos-bottom-none pos-left-none mix-blend-screen
-        src="https://files.superbed.cn/static/images/b8/ad/6683a8ced9c307b7e982b8ad.gif" mode="aspectFit"
+        src="https://pic.imgdb.cn/item/6684ad09d9c307b7e947f9e8.gif" mode="aspectFit"
       />
     </view>
 
     <view mt-60 box-border px-40>
-      <text>常用功能</text>
+      <text font-bold>
+        常用功能
+      </text>
       <view flex justify-between items-center mt-30>
         <view w-100 flex flex-col items-center>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text text-22>
-            功能
+          <text class="i-mdi:settings-outline text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            用户设置
           </text>
         </view>
-        <view w-100 flex>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+        <view w-100 flex flex-col items-center>
+          <text class="i-material-symbols-light:headset-mic text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            联系客服
+          </text>
         </view>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+
+        <view w-100 flex flex-col items-center>
+          <text class="i-mdi:printer-settings text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            打印
+          </text>
         </view>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+
+        <view w-100 flex flex-col items-center>
+          <text class="i-mdi:heart-settings text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            我的收藏
+          </text>
         </view>
       </view>
 
       <view flex justify-between items-center mt-30>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+        <view w-100 flex flex-col items-center>
+          <text class="i-mdi:content-save-settings-outline text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            我的文档
+          </text>
         </view>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+        <view w-100 flex flex-col items-center>
+          <text class="i-material-symbols-light:phonelink-setup-rounded text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            联系人
+          </text>
         </view>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+        <view w-100 flex flex-col items-center>
+          <text class="i-mdi:archive-settings-outline text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            我的发票
+          </text>
         </view>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+        <view w-100 flex flex-col items-center>
+          <text class="i-material-symbols-light:mail text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            我的邮件
+          </text>
         </view>
       </view>
     </view>
     <view mt-60 box-border px-40>
-      <text>其他功能</text>
+      <text font-bold>
+        其他功能
+      </text>
       <view flex justify-between items-center mt-30>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+        <view w-100 flex flex-col items-center>
+          <text class="i-heroicons:photo text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            我的相册
+          </text>
         </view>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+        <view w-100 flex flex-col items-center>
+          <text class="i-material-symbols-light:photo-camera-outline text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            拍照
+          </text>
         </view>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+        <view w-100 flex flex-col items-center>
+          <text class="i-maki:bus text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            车票
+          </text>
         </view>
-        <view w-100>
-          <text class="i-mdi-alarm text-blue-400 text-60" />
-          <text>功能</text>
+        <view w-100 flex flex-col items-center>
+          <text class="i-maki:parking-paid text-blue-400 text-60" />
+          <text text-22 block mt-10>
+            停车场
+          </text>
         </view>
       </view>
     </view>

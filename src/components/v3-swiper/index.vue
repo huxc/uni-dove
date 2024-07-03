@@ -25,7 +25,7 @@ const indexes = defineModel<number>()
 
 const boxStyle = computed(() => {
   return {
-    transition: '1s background-image',
+    transition: '1.2s background-image',
     backgroundImage: `url(${props.list[indexes.value ?? 0]})`,
   }
 })
