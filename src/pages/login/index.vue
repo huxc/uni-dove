@@ -1,4 +1,4 @@
-<route>
+<route  type="home">
     {
         "style": {
             "navigationStyle":"custom",

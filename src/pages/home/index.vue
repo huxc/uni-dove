@@ -1,4 +1,4 @@
-<route  type="home">
+<route>
 {
     "style": {
         "navigationStyle":"custom",
@@ -25,7 +25,7 @@ import List from './components/list/index.vue'
 import User from './components/user/index.vue'
 import store from '@/store'
 
-const tabbar = ref<string>('user')
+const tabbar = ref<string>('home')
 const isInit = ref<boolean>(true)
 
 onMounted(() => {
