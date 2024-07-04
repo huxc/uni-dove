@@ -36,14 +36,10 @@ function refreshToken(): Promise<void> {
 
   return new Promise((resolve, reject) => {
     // 刷新token
-    un.post('/users/login', {
-      username: 'admin',
-      password: '123456',
+    un.post('/users/refresh', {
+      refreshToken: store.userStore?.state?.refresh_token,
     }, {
       baseUrl: import.meta.env.VITE_API_BASE_URL,
-      header: {
-        Authorization: 'token',
-      },
     })
       .then(res => ((res.data as ApiRes).code === 200 ? res : Promise.reject(res)))
       .then((res: UnResponse) => {
@@ -53,7 +49,6 @@ function refreshToken(): Promise<void> {
         executeQueue(null)
       })
       .catch((err: UnError) => {
-        uni.removeStorageSync('TOKEN')
         reject(err)
         executeQueue(err || new Error('Refresh token error'))
       })

@@ -14,10 +14,11 @@
   },
   "pages": [
     {
-      "path": "pages/home/index",
+      "path": "pages/login/index",
       "type": "home",
       "style": {
-        "navigationStyle": "custom"
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
       }
     },
     {
@@ -25,11 +26,10 @@
       "type": "page"
     },
     {
-      "path": "pages/login/index",
+      "path": "pages/home/index",
       "type": "page",
       "style": {
-        "navigationStyle": "custom",
-        "navigationBarTextStyle": "white"
+        "navigationStyle": "custom"
       }
     }
   ],
