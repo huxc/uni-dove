@@ -1,5 +1,6 @@
 <template>
   <view>
+    <!-- use-cache cache-key="homeList" -->
     <z-paging ref="paging" v-model="list" @query="getList">
       <template #top>
         <wd-navbar title="列表" :fixed="true" placeholder safe-area-inset-top />
@@ -66,7 +67,7 @@ onMounted(() => {
  * 分页查询数据
  */
 function getList(pageNum: number, pageSize: number) {
-  getCustomers({ pageNum, pageSize }).then((res) => {
+  getCustomers({ pageNum, pageSize }, { isLoading: false }).then((res) => {
     const newList = res.data?.list || []
     paging.value!.complete(newList)
   }).catch(() => {
